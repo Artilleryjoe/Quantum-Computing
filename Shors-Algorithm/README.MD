@@ -3,6 +3,10 @@
 ## Overview  
 This project demonstrates Shor's quantum algorithm to factor integers efficiently, showcasing the potential impact of quantum computing on classical cryptography.
 
+This software includes cryptographic functionality that may be subject to U.S. Export Administration Regulations (EAR). It is classified as EAR99 and released under a public open-source license. This code is intended for lawful use and research purposes only.
+
+
+
 ## Features  
 - Implementation of Shor's algorithm using Qiskit  
 - Factoring small composite integers (e.g., 15, 21)  
