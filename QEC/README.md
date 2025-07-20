@@ -2,6 +2,9 @@
 
 Quantum Error Correction (QEC) is the backbone of reliable quantum computing. Unlike classical bits, qubits are fragile—they can suffer from bit flips, phase flips, and decoherence. QEC provides a way to detect and correct these errors **without collapsing the quantum state**, preserving coherence long enough for useful computation.
 
+This software includes cryptographic functionality that may be subject to U.S. Export Administration Regulations (EAR). It is classified as EAR99 and released under a public open-source license. This code is intended for lawful use and research purposes only.
+
+
 ---
 
 ## Why QEC Matters
