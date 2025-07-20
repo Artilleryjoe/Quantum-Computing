@@ -15,5 +15,5 @@ Unlike classical bits, qubits are vulnerable to errors due to interactions with 
 
 ## How to Run  
 1. Install Qiskit if you haven’t already:  
-   ```bash
-   pip install qiskit
+      ```bash
+pip install qiskit
