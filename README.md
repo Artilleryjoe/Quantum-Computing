@@ -20,4 +20,3 @@ It covers foundational algorithms, quantum key distribution, post-quantum crypto
 ---
 
 *Feel free to explore, provide feedback, or collaborate!*
-# Quantum-Computing
