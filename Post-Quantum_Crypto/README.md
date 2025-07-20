@@ -5,6 +5,9 @@ Post-Quantum Cryptography refers to cryptographic algorithms believed to be secu
 
 This project explores popular PQC algorithms, their principles, and basic implementations or demonstrations.
 
+This software includes cryptographic functionality that may be subject to U.S. Export Administration Regulations (EAR). It is classified as EAR99 and released under a public open-source license. This code is intended for lawful use and research purposes only.
+
+
 ## Focus Areas  
 - **Lattice-based cryptography** (e.g., NTRU, Kyber)  
 - **Code-based cryptography** (e.g., McEliece)  
