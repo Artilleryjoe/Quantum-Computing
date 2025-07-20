@@ -2,6 +2,8 @@
 
 ## Overview  
 This project implements the BB84 QKD protocol using Qiskit to demonstrate how quantum mechanics enables secure key exchange.
+This software includes cryptographic functionality that may be subject to U.S. Export Administration Regulations (EAR). It is classified as EAR99 and is released under a public license as open-source. This code is intended for lawful use and research only. 
+
 
 ## Features  
 - Simulation of quantum states and bases  
