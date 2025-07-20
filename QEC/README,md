@@ -1,0 +1,19 @@
+# Quantum Error Correction
+
+## Overview  
+Quantum error correction (QEC) is essential to protect fragile quantum information from noise and decoherence, enabling reliable quantum computation.
+
+This project explores foundational quantum error correction codes and their implementation using Qiskit simulations.
+
+## What is Quantum Error Correction?  
+Unlike classical bits, qubits are vulnerable to errors due to interactions with their environment (decoherence) and imperfect gate operations. Measuring qubits directly collapses their state, so QEC codes cleverly encode a logical qubit across multiple physical qubits to detect and correct errors without destroying quantum information.
+
+## Codes Covered  
+- **Bit-Flip Code:** Protects against bit-flip errors by encoding one qubit into three.  
+- **Phase-Flip Code:** Corrects phase-flip errors.  
+- **Shor Code (Intro):** Combines bit-flip and phase-flip codes for more robust correction.
+
+## How to Run  
+1. Install Qiskit if you haven’t already:  
+   ```bash
+   pip install qiskit
