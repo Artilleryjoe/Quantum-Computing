@@ -24,13 +24,6 @@ Quantum Error Correction (QEC) is the backbone of reliable quantum computing. Un
 
 ---
 
-## Example Notebooks
-
-- [`shor-code-demo.ipynb`](./shor-code-demo.ipynb) — Demonstrates a basic 9-qubit Shor code.
-- [`bit-flip-code.ipynb`](./bit-flip-code.ipynb) — Implements a 3-qubit bit flip code on Qiskit.
-- [`surface-code-basics.md`](./surface-code-basics.md) — An intro to surface codes and stabilizers.
-
----
 
 ## Tools & Resources
 
