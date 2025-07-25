@@ -1,4 +1,4 @@
-# Shor's Algorithm for Integer Factorization
+n# Shor's Algorithm for Integer Factorization
 
 ## Overview  
 This project demonstrates Shor's quantum algorithm to factor integers efficiently, showcasing the potential impact of quantum computing on classical cryptography.
@@ -27,7 +27,7 @@ This software includes cryptographic functionality that may be subject to U.S. E
 Shor's algorithm provides an exponential speedup over classical factoring algorithms, threatening RSA and related cryptographic schemes.
 
 ## References  
-- [Shor's Algorithm - Wikipedia](https://en.wikipedia.org/wiki/Shor%27s_algorithm)  
+
 - [Qiskit Textbook - Shor's Algorithm](https://qiskit.org/textbook/ch-algorithms/shor.html)
 
 ---
