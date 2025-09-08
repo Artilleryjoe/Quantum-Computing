@@ -4,6 +4,12 @@
 This repository contains my personal projects and experiments in quantum computing and quantum cryptography.  
 It covers foundational algorithms, quantum key distribution, post-quantum cryptography, and error correction.
 
+## Installation
+
+1. Clone the repository.
+2. Create a virtual environment with Python 3.10 or later.
+3. Install requirements with `pip install qiskit`.
+
 ## Projects
 
 - [BB84 Protocol](./BB84-Protocol): Quantum key distribution protocol simulation using Qiskit.  
