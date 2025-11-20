@@ -6,7 +6,11 @@ This experiment sketches a small, explicit "bucket-brigade" QRAM read using Qisk
 - Address register: two qubits labeled `a0` (MSB) and `a1` (LSB).
 - Data register: one qubit `d`.
 - Classical contents: `d = [0, 1, 1, 0]`, meaning `00 → 0`, `01 → 1`, `10 → 1`, `11 → 0`.
-- Ideal map: \(\sum_i \alpha_i |i\rangle_A |0\rangle_D \mapsto \sum_i \alpha_i |i\rangle_A |d_i\rangle_D\).
+- Ideal map:
+
+  $$
+  \sum_i \alpha_i\,|i\rangle_A \otimes |0\rangle_D \longmapsto \sum_i \alpha_i\,|i\rangle_A \otimes |d_i\rangle_D
+  $$
 
 ## Bucket-brigade interpretation
 Real bucket-brigade QRAM stores the address path through a binary tree of switches. With only two address qubits, that tree would have a single root (steered by `a0`) and two children (steered by `a1`). Here we compress the same control logic into multi-controlled X gates: for each address whose classical content is 1 we apply an `mcx` to the data qubit, controlling on the address qubits being in that computational basis state. Zero-controls are emulated with temporary X gates, mirroring how the tree would open the correct branch for a specific address.
