@@ -1,0 +1,9 @@
+qiskit==2.2.*
+qiskit-aer>=0.15
+qiskit-algorithms>=0.3
+qiskit-machine-learning>=0.7
+scikit-learn>=1.4
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.8
+notebook>=7.0
