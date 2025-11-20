@@ -1,25 +1,25 @@
 # Quantum Computing Research
 
-This repository collects hands-on experiments exploring core ideas in quantum computing and quantum-safe cryptography. Each folder contains notebooks or notes for a standalone topic so you can jump directly to the concept you want to explore.
+This repository collects hands-on notes and experiment designs exploring core ideas in quantum computing and quantum-safe cryptography. Each folder contains standalone write-ups so you can jump directly to the concept you want to explore.
 
 ## Getting started
 
 1. Clone the repository.
 2. Create a Python 3.10+ virtual environment.
 3. Install the base dependency with `pip install qiskit`.
-
-Additional projects may include their own README files with extra requirements.
+4. Review any folder-specific requirements (for example, `Quantum_Machine_Learning/requirements.txt`).
 
 ## Repository structure
 
 | Folder | Focus |
 | --- | --- |
-| [`bb84-protocol/`](./bb84-protocol) | Simulating the BB84 quantum key distribution protocol and visualising raw key generation. |
-| [`grovers-search/`](./grovers-search) | Implementing Grover's algorithm and discussing its impact on search and cryptanalysis. |
-| [`post-quantum-crypto/`](./post-quantum-crypto) | Experimenting with lattice- and code-based cryptosystems that resist quantum attacks. |
-| [`quantum-error-correction/`](./quantum-error-correction) | Studying noise models and small quantum error-correcting codes. |
-| [`experiments/qram_qml_kernel/`](./experiments/qram_qml_kernel) | QRAM-loaded single-qubit quantum kernel with resource analysis for tiny QML. |
-| [`shors-algorithm/`](./shors-algorithm) | Exploring Shor's factoring algorithm and its implications for public-key cryptography. |
+| [`bb84-protocol/`](./bb84-protocol) | BB84 quantum key distribution notes, including adaptive noise experiments. |
+| [`grovers-search/`](./grovers-search) | Grover's algorithm overview and robust-oracle experiment notes. |
+| [`post-quantum-crypto/`](./post-quantum-crypto) | Quantum-safe cryptography threat modeling and hybrid benchmark ideas. |
+| [`quantum-error-correction/`](./quantum-error-correction) | Summaries of error models and small quantum error-correcting codes. |
+| [`shors-algorithm/`](./shors-algorithm) | Shor's algorithm background and fault-tolerant scaling experiments. |
+| [`Quantum_Machine_Learning/`](./Quantum_Machine_Learning) | Dependency list for planned QML experiments. |
+| [`experiments/`](./experiments) | Central collection of experiment notes referenced by the topic folders. |
 
 ## Goals
 

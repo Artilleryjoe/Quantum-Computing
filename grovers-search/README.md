@@ -1,34 +1,21 @@
-# Grover's Search Algorithm
+# Grover's Search Algorithm Notes
 
-## Overview  
-Grover's algorithm provides a quantum speedup for unstructured search problems, offering a quadratic improvement over classical search algorithms.
-
-This project demonstrates Grover's search algorithm using Qiskit by finding a marked item in a list.
+## Overview
+This folder outlines how to build Grover's search circuits in Qiskit and how to reason about oracle design. The emphasis is on understanding how oracle robustness affects success probability.
 
 This software includes cryptographic functionality that may be subject to U.S. Export Administration Regulations (EAR). It is classified as EAR99 and released under a public open-source license. This code is intended for lawful use and research purposes only.
 
+## What's inside
+- Refresher on Grover's amplitude amplification.
+- Robust-oracle experiment plan in [`grovers_robust_oracle_experiments.md`](./grovers_robust_oracle_experiments.md) covering multi-solution cases and noise effects.
 
-## Features  
-- Implementation of Grover's algorithm for a small search space  
-- Oracle construction for the marked element  
-- Amplification of the correct solution’s probability  
-- Simulation results showing success probability  
+## How to use these notes
+- Install Qiskit with `pip install qiskit`.
+- Implement the outlined oracles and diffuser in a notebook or script, then run simulations to track success probability across iterations.
+- Compare outcomes for single- and multi-solution search spaces using the experiment prompts.
 
-## Requirements  
-- Python 3.7+  
-- Qiskit library (`pip install qiskit`)  
-
-## How to Run  
-1. Clone the repo and navigate to this folder.  
-2. Install dependencies: `pip install qiskit`  
-3. Run the Grover's search script: `python grovers_search.py`  
-4. Review the output and measurement histogram.
-
-## Background  
-Grover's algorithm uses amplitude amplification to find a marked item in an unsorted database in O(√N) time, compared to O(N) classically.
-
-## References  
-- [Grover's Algorithm - Wikipedia](https://en.wikipedia.org/wiki/Grover%27s_algorithm)  
+## References
+- [Grover's Algorithm - Wikipedia](https://en.wikipedia.org/wiki/Grover%27s_algorithm)
 - [Qiskit Textbook - Grover's Algorithm](https://qiskit.org/textbook/ch-algorithms/grover.html)
 
 ---
