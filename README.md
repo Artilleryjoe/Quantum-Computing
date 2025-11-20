@@ -18,6 +18,7 @@ Additional projects may include their own README files with extra requirements.
 | [`grovers-search/`](./grovers-search) | Implementing Grover's algorithm and discussing its impact on search and cryptanalysis. |
 | [`post-quantum-crypto/`](./post-quantum-crypto) | Experimenting with lattice- and code-based cryptosystems that resist quantum attacks. |
 | [`quantum-error-correction/`](./quantum-error-correction) | Studying noise models and small quantum error-correcting codes. |
+| [`experiments/qram_qml_kernel/`](./experiments/qram_qml_kernel) | QRAM-loaded single-qubit quantum kernel with resource analysis for tiny QML. |
 | [`shors-algorithm/`](./shors-algorithm) | Exploring Shor's factoring algorithm and its implications for public-key cryptography. |
 
 ## Goals
