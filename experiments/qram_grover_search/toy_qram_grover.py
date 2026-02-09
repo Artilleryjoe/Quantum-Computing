@@ -125,7 +125,7 @@ def run_toy_grover(data_bits: Iterable[int], target_value: int = 1) -> None:
     oracle_gate = build_oracle(data_list, target_value)
     diffuser_gate = diffuser(address_bits)
 
-    grover.append(oracle_gate, grover.qubits[:-1])
+    grover.append(oracle_gate, grover.qubits)
     grover.append(diffuser_gate, address)
     grover.measure(address, classical)
 
