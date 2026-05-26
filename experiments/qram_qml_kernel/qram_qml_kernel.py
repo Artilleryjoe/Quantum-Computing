@@ -19,6 +19,10 @@ class QRAMConfig:
 
     features: List[float]
 
+    def __post_init__(self) -> None:
+        if not self.features:
+            raise ValueError("features must contain at least one value")
+
     @property
     def thetas(self) -> List[float]:
         return [math.pi * x for x in self.features]
@@ -51,6 +55,11 @@ def kernel_matrix(thetas: List[float]) -> List[List[float]]:
 
 
 def classify(test_feature: float, training_thetas: List[float], labels: List[int]) -> int:
+    if not training_thetas:
+        raise ValueError("training_thetas must not be empty")
+    if len(training_thetas) != len(labels):
+        raise ValueError("training_thetas and labels must have the same length")
+
     theta_test = math.pi * test_feature
     fidelities = [fidelity(theta_test, ti) for ti in training_thetas]
     return labels[fidelities.index(max(fidelities))]
