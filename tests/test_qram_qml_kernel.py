@@ -21,3 +21,8 @@ def test_classify_rejects_empty_training_data():
 def test_classify_rejects_mismatched_labels():
     with pytest.raises(ValueError, match="same length"):
         classify(0.5, [0.1, 0.9], [1])
+
+
+def test_qram_config_uses_at_least_one_address_qubit():
+    config = QRAMConfig(features=[0.42])
+    assert config.address_qubits == 1
