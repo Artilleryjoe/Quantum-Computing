@@ -119,13 +119,11 @@ def run_experiment(
     algorithm_globals.random_seed = seed
     raw_data, labels, is_nominal = generate_synthetic_dataset(seed=seed)
 
-    scaler = MinMaxScaler(feature_range=(-1.0, 1.0))
-    scaled_data = scaler.fit_transform(raw_data)
-
-    nominal_data = scaled_data[is_nominal]
+    nominal_data = raw_data[is_nominal]
     n_train = int(len(nominal_data) * train_fraction)
-    train_data = nominal_data[:n_train]
-    test_data = scaled_data[n_train:]
+
+    train_data_raw = nominal_data[:n_train]
+    test_data_raw = raw_data[n_train:]
     test_labels = labels[n_train:]
 
     quantum_kernel = (
