@@ -52,6 +52,8 @@ now lives in `qiskit_algorithms.utils`.
 
 ```bash
 python experiments/experiment_01/experiment.py
+python experiments/experiment_01/experiment.py --noise
+python experiments/experiment_01/experiment.py --noise --noise-probability 0.03
 ```
 
 The script prints precision/recall metrics for the quantum kernel model and a
