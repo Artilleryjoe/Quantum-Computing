@@ -34,7 +34,8 @@ class QRAMConfig:
     @property
     def address_qubits(self) -> int:
         # Enough qubits to index every training point.  Only one is needed for 2 points.
-        return math.ceil(math.log2(self.num_addresses))
+        # Keep at least one wire for routing/control even with one stored item.
+        return max(1, math.ceil(math.log2(self.num_addresses)))
 
 
 def rotation_state(theta: float) -> List[float]:
