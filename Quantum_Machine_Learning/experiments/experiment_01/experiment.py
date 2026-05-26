@@ -95,16 +95,18 @@ def run_experiment(
     algorithm_globals.random_seed = seed
     raw_data, labels, is_nominal = generate_synthetic_dataset(seed=seed)
 
-    scaler = MinMaxScaler(feature_range=(-1.0, 1.0))
-    scaled_data = scaler.fit_transform(raw_data)
-
-    nominal_data = scaled_data[is_nominal]
+    nominal_data = raw_data[is_nominal]
     n_train = int(len(nominal_data) * train_fraction)
-    train_data = nominal_data[:n_train]
-    test_data = scaled_data[n_train:]
+
+    train_data_raw = nominal_data[:n_train]
+    test_data_raw = raw_data[n_train:]
     test_labels = labels[n_train:]
 
-    quantum_kernel = build_quantum_kernel(feature_dimension=scaled_data.shape[1])
+    scaler = MinMaxScaler(feature_range=(-1.0, 1.0))
+    train_data = scaler.fit_transform(train_data_raw)
+    test_data = scaler.transform(test_data_raw)
+
+    quantum_kernel = build_quantum_kernel(feature_dimension=train_data.shape[1])
     _, quantum_predictions = evaluate_quantum_kernel_svm(quantum_kernel, train_data, test_data)
     _, classical_predictions = evaluate_classical_baseline(train_data, test_data)
 
