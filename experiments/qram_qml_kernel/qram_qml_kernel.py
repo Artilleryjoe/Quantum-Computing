@@ -82,7 +82,8 @@ def save_kernel_matrix(path: str, kernel: List[List[float]]) -> None:
     with open(path, "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["Kernel matrix K(i,j) = |<psi_i|psi_j>|^2"])
-        writer.writerow(["", "x0", "x1"])
+        headers = ["", *[f"x{idx}" for idx in range(len(kernel))]]
+        writer.writerow(headers)
         for idx, row in enumerate(kernel):
             writer.writerow([f"x{idx}", *[f"{val:.6f}" for val in row]])
 
